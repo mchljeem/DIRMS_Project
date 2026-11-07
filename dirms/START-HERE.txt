@@ -1,0 +1,20 @@
+DIRMS | Disaster Incident & Response Management System
+
+1. BACK UP: phpMyAdmin > bantay_sakuna > Export, and previous website directory.
+2. Extract the DIRMS folder into C:\xampp\htdocs\dirms\
+3. If you need original incident photos, copy older bantay-sakuna\uploads\ into dirms\uploads\
+4. Start XAMPP Apache and MySQL.
+5. Existing DB: http://localhost/dirms/upgrade.php
+   If there is already an admin, authorize the upgrade with existing admin email/password.
+6. No admin user yet (your screenshot showed 0 users):
+   http://localhost/dirms/setup.php
+   Create your FIRST admin with username, email and password (12+ characters).
+7. Login: http://localhost/dirms/login.php
+   Admin: admin.php   |   Resident: resident.php
+8. Update verified shelter GPS latitude+longitude and occupancy in Admin > Evacuation Centers.
+9. For public maps: http://localhost/dirms/evacuation-centers.php
+10. READ README.md for details. Demo shelter capacities are NOT real-time availability.
+
+Default database: bantay_sakuna (preserves your previous records). Config file: config.php
+Passwords are securely hashed. They cannot be displayed from phpMyAdmin.
+Preview-*.html files are demos only, NOT connected to your XAMPP database.
